@@ -1,0 +1,25 @@
+# New York Coffee Database Project
+
+## 📋 Contexte
+Projet de migration et centralisation de données pour une chaîne de cafés new-yorkaise en expansion nationale. Transformation d'un système fragmenté (tableurs Excel, CSV, POS) en une base de données relationnelle PostgreSQL professionnelle.
+
+## 🎯 Objectifs
+- Centraliser les données opérationnelles et clients
+- Concevoir un schéma normalisé pour l'expansion en franchise
+- Exporter des sous-ensembles de données vers MySQL pour les partenaires externes (paie, marketing)
+
+## 🛠️ Stack
+- **PostgreSQL** : Base principale avec pgAdmin
+- **MySQL** : Pour les partenaires externes
+- **CSV** : Format d'échange inter-SGBD
+
+## 📊 Fonctionnalités
+- Modélisation ERD avec normalisation (7 tables, relations 1:N)
+- Vues et vues matérialisées pour l'accès externe
+- Migration PostgreSQL → MySQL via CSV
+- Données complètes : personnel, points de vente, transactions, clients, produits
+
+*Projet éducatif suivant une méthodologie professionnelle de conception de bases de données.*
+
+## 📊 Diagramme ERD
+![Diagramme ERD de la base de données](ERD.png)

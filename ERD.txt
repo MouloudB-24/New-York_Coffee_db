@@ -1,0 +1,54 @@
+Anlyse des données :
+-  Une base de données centralisée garantié une verité unique pour les franchisés et la direction.
+- Traçablité complète des données
+- Automatisation des rapports de franchise
+Conseil : Dans un contexte métier, relie toujours
+
+Dans la table "sales_transaction" :
+    - Deux colonnes renvoient à la même information temporelle -> Fusionner (Normalisation)
+    - Deux lignes avec le même "transaction_id", cela signifie qu'une transaction peut contenir plusieurs produits -> il faut créer une 
+      table "product"
+
+Task 1 : Entities
+staff
+sales_outlet
+sales_transaction
+customer
+product
+
+Task 2 : List of the sales transaction attribus:
+transaction_id (integer)
+transaction_date (date)
+transaction_time (time)
+sales_outlet_id (integer)
+staff_id (integer)
+customer_id (integer)
+
+Task 4
+sales_transaction:
+  sales_transaction_id integer
+  transaction_date (date)
+  transaction_time (time)
+  sales_outlet_id (integer)
+  staff_id (integer)
+  customer_id (integer)
+
+sales_detail:
+  id integer
+  sale_transaction_id integer
+  product_id integer
+  quantity integer
+  price numeric(10, 2)
+
+product
+  product_id integer
+  product_type_id integer
+  product_name varchar
+  description text
+  price numeric(10,2)
+
+product_type:
+  product_type_id integer
+  product_category varchar
+  product_type_name varchar
+

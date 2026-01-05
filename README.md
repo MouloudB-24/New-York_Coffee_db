@@ -1,5 +1,9 @@
 # New York Coffee Database Project
 
+![IBM Data Engineering](https://img.shields.io/badge/IBM-Data%20Engineering-blue)
+
+**Projet de certification** - IBM Data Engineering Professional Certificate (Coursera)
+
 ## 📋 Contexte
 Projet de migration et centralisation de données pour une chaîne de cafés new-yorkaise en expansion nationale. Transformation d'un système fragmenté (tableurs Excel, CSV, POS) en une base de données relationnelle PostgreSQL professionnelle.
 
